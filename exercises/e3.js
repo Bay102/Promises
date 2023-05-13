@@ -38,14 +38,15 @@ console.log(getPromise(120));
  * * Returns the sum value
  * * if you have solved it successfully, the updateSumValue() function will return the value of 10;
 */
-export const updateSumValue = async () => {
+export const updateSumValue = () => {
   let sum = 2;
-   return await getPromise(120).then((value) => {
-    sum += value;
-    sum += 8;
-    return sum;
-   }) 
+  getPromise(120).then((value) => sum += value)
+  sum += 8;
+  return sum 
 };
+
+
+console.log(updateSumValue());
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"

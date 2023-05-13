@@ -35,7 +35,6 @@ export const result = async () => {
   console.log('MAIN PROGRAM');
 }
 
-```
 
 ## Hints
 
